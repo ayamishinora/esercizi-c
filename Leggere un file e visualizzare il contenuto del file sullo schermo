@@ -1,0 +1,22 @@
+/*Scrivi un programma che legga un file di testo e visualizzi il suo contenuto sullo schermo.*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(int argc, char argv[]){
+
+    FILE *f1;
+    
+    char riga[101];
+
+
+    f1= fopen("C:\\Users\\Utente\\Desktop\\file.txt","r");
+    fgets(riga, 101, f1 );
+    printf("%s", riga);
+
+    return 0;
+
+}
+
